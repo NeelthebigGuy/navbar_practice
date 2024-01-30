@@ -1,7 +1,20 @@
 import {React, useState} from 'react'
+import { motion } from 'framer-motion';
 
 import './css/navbar.css'
 
+
+function ReactiveLinks(props){
+
+    return (
+        <motion.a href={props.link} className='p-2'
+        whileHover={{scale:1.01}}>
+            {props.name}
+        
+        </motion.a>
+    )
+
+}
 
 
 export default function NavBar() {
@@ -15,7 +28,7 @@ export default function NavBar() {
         }
         else{
             setOpen(1)
-            document.getElementById("myDropDown").style.height = "250px";
+            document.getElementById("myDropDown").style.height = "208px";
         }
     }
 
@@ -32,9 +45,10 @@ export default function NavBar() {
     
     <div id='myDropDown' className='dropdown' onMouseLeave={toggleDropDown}>
         <div className='flex flex-col gap-2 p-2'>
-            <a href='' className='p-2'>TEST</a>
-            <a href='' className='p-2'>TEST</a>
-            <a href='' className='p-2'>TEST</a>
+            <ReactiveLinks link="https://github.com/NeelthebigGuy" name="GitHub"/>
+            <ReactiveLinks link="" name="LinkedIn"/>
+            <ReactiveLinks link="" name="Instagram"/>
+            <ReactiveLinks link="mailto:neel@khiroya.ca" name="Email me"/>
         </div>
     </div>
 

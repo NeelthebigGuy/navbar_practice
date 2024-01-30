@@ -1,14 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 .mycontainer{
+    background-color: #343A40;
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-size: large;
+    padding: 10px 0;
 }
 
 .mytitle{
     font-family: 'Edu TAS Beginner', cursive;
+    font-size: 50px;
+    padding: 50px 0;
+    margin: 50px 0;
+}
+
+.contentcontainer{
+    background-color: #ADB5BD;
+    color: #343A40;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: large;
+    padding: 10px 0;
+}
+
+.contenttitle{
+    padding: 20px 0;
 }
