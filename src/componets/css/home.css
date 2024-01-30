@@ -14,7 +14,7 @@
 
 .mytitle{
     font-family: 'Edu TAS Beginner', cursive;
-    font-size: 50px;
+    font-size: 60px;
     padding: 50px 0;
     margin: 50px 0;
 }
@@ -33,4 +33,14 @@
 
 .contenttitle{
     padding: 20px 0;
+    font-size: x-large;
+}
+
+.homecontenttitle{
+    padding: 20px 0;
+    font-size: xx-large;
+}
+
+.homecontent{
+    padding-top: 10px;
 }
