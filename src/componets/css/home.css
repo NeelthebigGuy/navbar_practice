@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Lato:ital@1&display=swap');
+
+.mycontainer{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+}
+
+.mytitle{
+    font-family: 'Edu TAS Beginner', cursive;
+}
