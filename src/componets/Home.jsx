@@ -5,6 +5,17 @@ import './css/home.css'
 function HomeContent(props){
   return(
     <>
+      <div className='homecontenttitle pt-14'>
+        {props.title}
+      </div>
+
+      <div className='homecontent pl-4 pr-4 pb-4 pt-4'>
+        {props.intro}
+      </div>
+
+      <div className='homecontent pl-4 pr-4 pb-10'>
+        {props.description}
+      </div>
     </>
   )
 }
@@ -37,21 +48,9 @@ export default function Home() {
 
     <div className='contentcontainer'>
         <span>
-          <div className='homecontenttitle pt-10'>
-            About me
-          </div>
+          <HomeContent title="About me" intro="Hello! I'm Neel," description="A Computer Science student with a passion for anything computer related, from building destops to coding a bash script; I find myself enjoying anything that challanged my skillset in the computer field. I tend to spend most of my time on my computer creating new apps and project"/>
 
-          <div className='homecontent pl-4 pr-4 pb-10'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus accusantium minima maxime reprehenderit? Nobis, impedit deserunt reiciendis obcaecati illum, vitae cum incidunt officiis delectus vero minus id pariatur, maxime perferendis?
-          </div>
-
-          <div className='homecontenttitle pt-10'>
-            Education
-          </div>
-
-          <div className='homecontent pl-4 pr-4 pb-10'>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus accusantium minima maxime reprehenderit? Nobis, impedit deserunt reiciendis obcaecati illum, vitae cum incidunt officiis delectus vero minus id pariatur, maxime perferendis?
-          </div>
+          <HomeContent title="Education" intro="Third year Computer Science" description="lorem"/>
         </span>
     </div>
     </>

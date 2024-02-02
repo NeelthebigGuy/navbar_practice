@@ -22,6 +22,11 @@ export default function NavBar() {
     const [isOpen, setOpen] = useState(0);
     
     const toggleDropDown = () => {
+
+        //scrolls to top to see navbar.
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        
+        //active state for our navbar.
         if(isOpen == 1){
             document.getElementById("myDropDown").style.height = "0px";
             setOpen(0);
