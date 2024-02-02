@@ -9,10 +9,6 @@ function HomeContent(props){
         {props.title}
       </div>
 
-      <div className='homecontent pl-4 pr-4 pb-4 pt-4'>
-        {props.intro}
-      </div>
-
       <div className='homecontent pl-4 pr-4 pb-10'>
         {props.description}
       </div>
@@ -48,9 +44,9 @@ export default function Home() {
 
     <div className='contentcontainer'>
         <span>
-          <HomeContent title="About me" intro="Hello! I'm Neel," description="A Computer Science student with a passion for anything computer related, from building destops to coding a bash script; I find myself enjoying anything that challanged my skillset in the computer field. I tend to spend most of my time on my computer creating new apps and project"/>
+          <HomeContent title="About me" description="A Computer Science student with a passion for all things computer related, from building desktops to coding. I enjoy anything that challenges my knowledge in the Computer Science profession."/>
 
-          <HomeContent title="Education" intro="Third year Computer Science" description="lorem"/>
+          <HomeContent title="Education" description="placement"/>
         </span>
     </div>
     </>

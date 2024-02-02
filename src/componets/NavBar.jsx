@@ -51,8 +51,8 @@ export default function NavBar() {
     <div id='myDropDown' className='dropdown' onMouseLeave={toggleDropDown}>
         <div className='flex flex-col gap-2 p-2'>
             <ReactiveLinks link="https://github.com/NeelthebigGuy" name="GitHub"/>
-            <ReactiveLinks link="" name="LinkedIn"/>
-            <ReactiveLinks link="" name="Instagram"/>
+            <ReactiveLinks link="https://www.linkedin.com/in/neel-khiroya-71a177239/" name="LinkedIn"/>
+            <ReactiveLinks link="https://www.instagram.com/neelkhiroya/" name="Instagram"/>
             <ReactiveLinks link="mailto:neel@khiroya.ca" name="Email me"/>
         </div>
     </div>
