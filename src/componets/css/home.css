@@ -29,6 +29,7 @@
     font-family: 'Nunito', sans-serif;
     font-size: large;
     padding: 10px 0;
+    list-style: disc;
 }
 
 .contenttitle{
@@ -41,6 +42,14 @@
     font-size: xx-large;
 }
 
-.homecontent{
-    padding-top: 10px;
+.paragraphstyle{
+    background-color: #343A40;
+    color: rgba(255, 255, 255, 0.87);;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.mycontainer ul li {
+    display: list-item;
+    list-style-type: disc;    
 }
