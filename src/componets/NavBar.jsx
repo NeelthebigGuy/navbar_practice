@@ -42,7 +42,7 @@ export default function NavBar() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <div className='navbar h-12'>
         <div className='lefttitle md:pl-2'>Neel K</div>
-        <button className='button' onMouseEnter={toggleDropDown} onClick={toggleDropDown}>
+        <button className='button' onClick={toggleDropDown}>
             <i className='fa fa-bars md:invisible'></i>
             <div className='top-0 right-0 hidden md:inline md:text-black md:text-lg md:pr-2'>Links</div>
         </button>
