@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './css/home.css'
 
 
@@ -23,9 +24,12 @@ export default function Home() {
     {/* Title */}
     <div className='mycontainer'>
         <div className=''>
-          <h1 className='mytitle bg-gradient-to-r from-indigo-400 to-cyan-400 text-transparent bg-clip-text'>
+          <motion.h1  className='mytitle bg-gradient-to-r from-indigo-400 to-cyan-400 text-transparent bg-clip-text'
+                      animate={{opacity: 1, zIndex: 10}}
+                      initial={{opacity: 0, zIndex:10}}
+                      transition={{duration: .5}}>
             Neel Khiroya
-          </h1>
+          </motion.h1>
         </div>
     </div>
 
@@ -42,7 +46,7 @@ export default function Home() {
       </div>
     </div>
 
-    <div className='contentcontainer'>
+    <div className='contentcontainer md:pl-10 md:pr-10'>
         <div>
           <HomeContent title="About me" description="A Computer Science student with a passion for all things computer related, from building desktops to coding. I enjoy anything that challenges my knowledge in the Computer Science profession."/>
 
@@ -63,6 +67,10 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+
+            <HomeContent title="Experience" description="As a computer science student, I bring a strong academic background and a wealth of knowledge in building and maintaining computers, as well as proficiency in coding. While my experience has primarily been focused on academic pursuits, I am eager to transition this expertise into real-world applications. I have been building, maintaing and upgrading gaming desktop computers for over 4 years. I am able to install/repair Windows operating systems and build a desktop compuer from parts."/>
+          
+          
           </div>
     </div>
     </>

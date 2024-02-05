@@ -43,10 +43,10 @@
 }
 
 .paragraphstyle{
-    background-color: #343A40;
-    color: rgba(255, 255, 255, 0.87);;
-    padding: 10px;
-    border-radius: 20px;
+    background-color: #E9ECEF;
+    color: #495057;
+    padding: 15px;
+    border-radius: 15px;
 }
 
 .mycontainer ul li {
